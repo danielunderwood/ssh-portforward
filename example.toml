@@ -1,0 +1,4 @@
+host = "example.com"
+user = "bob"
+key = "/home/alice/.ssh/id_rsa"
+ports = [8080, { local_port = 8888, remote_port = 8000 }]
