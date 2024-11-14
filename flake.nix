@@ -1,5 +1,5 @@
 {
-  description = "A simple Go package";
+  description = "Simple SSH port forwarding";
 
   # Nixpkgs / NixOS version to use.
   inputs.nixpkgs.url = "nixpkgs/nixos-unstable";
@@ -32,7 +32,7 @@
         in
         {
           go-hello = pkgs.buildGoModule {
-            pname = "go-hello";
+            pname = "ssh-portforward";
             inherit version;
             # In 'nix develop', we don't need a copy of the source tree
             # in the Nix store.
@@ -48,7 +48,7 @@
             # remember to bump this hash when your dependencies change.
             # vendorHash = pkgs.lib.fakeHash;
 
-            vendorHash = "sha256-pQpattmS9VmO3ZIQUFn66az8GSmB4IvYhTTCFn6SUmo=";
+            vendorHash = "sha256-jR7oDPu/WV5guGf0Gk05Jc3f8JjKLDEi96YfThvG3E0=";
           };
         });
 

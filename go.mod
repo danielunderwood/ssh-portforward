@@ -1,4 +1,4 @@
-module example.com/go-hello
+module github.com/danielunderwood/ssh-portforward
 
 go 1.22
 
